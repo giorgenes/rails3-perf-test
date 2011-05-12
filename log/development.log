@@ -1,0 +1,3049 @@
+  [1m[36mSQL (12.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (3.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (3.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20110512212418)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "gender" varchar(255), "location" varchar(255), "age" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110512212418')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:50:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:50:36.618411', '2011-05-12 21:50:36.618411')
+Completed 200 OK in 286ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:51:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:51:03.434167', '2011-05-12 21:51:03.434167')
+Completed 200 OK in 165ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.138999', '2011-05-12 21:52:11.138999')[0m
+Completed 200 OK in 146ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.278111', '2011-05-12 21:52:11.278111')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.385428', '2011-05-12 21:52:11.385428')[0m
+Completed 200 OK in 115ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.593650', '2011-05-12 21:52:11.593650')
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.720350', '2011-05-12 21:52:11.720350')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (8.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.893364', '2011-05-12 21:52:11.893364')
+Completed 200 OK in 57ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:11.987514', '2011-05-12 21:52:11.987514')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.122428', '2011-05-12 21:52:12.122428')
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.225040', '2011-05-12 21:52:12.225040')[0m
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.333012', '2011-05-12 21:52:12.333012')
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.480239', '2011-05-12 21:52:12.480239')[0m
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.587242', '2011-05-12 21:52:12.587242')
+Completed 200 OK in 70ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (3.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.729717', '2011-05-12 21:52:12.729717')[0m
+Completed 200 OK in 31ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:12.845561', '2011-05-12 21:52:12.845561')
+Completed 200 OK in 59ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.031778', '2011-05-12 21:52:13.031778')[0m
+Completed 200 OK in 97ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.143336', '2011-05-12 21:52:13.143336')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.253079', '2011-05-12 21:52:13.253079')[0m
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.363390', '2011-05-12 21:52:13.363390')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.465122', '2011-05-12 21:52:13.465122')[0m
+Completed 200 OK in 69ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.605447', '2011-05-12 21:52:13.605447')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.712045', '2011-05-12 21:52:13.712045')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.842015', '2011-05-12 21:52:13.842015')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:13.954924', '2011-05-12 21:52:13.954924')[0m
+Completed 200 OK in 48ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.100361', '2011-05-12 21:52:14.100361')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.201509', '2011-05-12 21:52:14.201509')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.326186', '2011-05-12 21:52:14.326186')
+Completed 200 OK in 91ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.443582', '2011-05-12 21:52:14.443582')[0m
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.537109', '2011-05-12 21:52:14.537109')
+Completed 200 OK in 121ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.725327', '2011-05-12 21:52:14.725327')[0m
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.827164', '2011-05-12 21:52:14.827164')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:14.998638', '2011-05-12 21:52:14.998638')[0m
+Completed 200 OK in 123ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.088672', '2011-05-12 21:52:15.088672')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (4.9ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.271968', '2011-05-12 21:52:15.271968')[0m
+Completed 200 OK in 118ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.379377', '2011-05-12 21:52:15.379377')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.481786', '2011-05-12 21:52:15.481786')[0m
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.628081', '2011-05-12 21:52:15.628081')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.699384', '2011-05-12 21:52:15.699384')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.843853', '2011-05-12 21:52:15.843853')
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:15.944569', '2011-05-12 21:52:15.944569')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.091578', '2011-05-12 21:52:16.091578')
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.211360', '2011-05-12 21:52:16.211360')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.277590', '2011-05-12 21:52:16.277590')
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.438372', '2011-05-12 21:52:16.438372')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.584911', '2011-05-12 21:52:16.584911')
+Completed 200 OK in 118ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.738668', '2011-05-12 21:52:16.738668')[0m
+Completed 200 OK in 55ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.858061', '2011-05-12 21:52:16.858061')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:16 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:16.964331', '2011-05-12 21:52:16.964331')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.076685', '2011-05-12 21:52:17.076685')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.215852', '2011-05-12 21:52:17.215852')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.371230', '2011-05-12 21:52:17.371230')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.478890', '2011-05-12 21:52:17.478890')[0m
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.606606', '2011-05-12 21:52:17.606606')
+Completed 200 OK in 56ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.707507', '2011-05-12 21:52:17.707507')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.843704', '2011-05-12 21:52:17.843704')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:17 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:17.947924', '2011-05-12 21:52:17.947924')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.088897', '2011-05-12 21:52:18.088897')
+Completed 200 OK in 106ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.186901', '2011-05-12 21:52:18.186901')[0m
+Completed 200 OK in 71ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.316356', '2011-05-12 21:52:18.316356')
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.463829', '2011-05-12 21:52:18.463829')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.594443', '2011-05-12 21:52:18.594443')
+Completed 200 OK in 134ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.760440', '2011-05-12 21:52:18.760440')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:18.830336', '2011-05-12 21:52:18.830336')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:18 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.015870', '2011-05-12 21:52:19.015870')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.127648', '2011-05-12 21:52:19.127648')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.295499', '2011-05-12 21:52:19.295499')[0m
+Completed 200 OK in 101ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.407188', '2011-05-12 21:52:19.407188')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.473348', '2011-05-12 21:52:19.473348')[0m
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (5.7ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.623990', '2011-05-12 21:52:19.623990')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.728808', '2011-05-12 21:52:19.728808')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.872930', '2011-05-12 21:52:19.872930')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:19 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:19.979226', '2011-05-12 21:52:19.979226')[0m
+Completed 200 OK in 136ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.180226', '2011-05-12 21:52:20.180226')
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.290246', '2011-05-12 21:52:20.290246')[0m
+Completed 200 OK in 54ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.444719', '2011-05-12 21:52:20.444719')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.584786', '2011-05-12 21:52:20.584786')[0m
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.691956', '2011-05-12 21:52:20.691956')
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.807809', '2011-05-12 21:52:20.807809')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (3.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:20.910015', '2011-05-12 21:52:20.910015')
+Completed 200 OK in 34ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:20 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.046003', '2011-05-12 21:52:21.046003')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.153824', '2011-05-12 21:52:21.153824')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.308792', '2011-05-12 21:52:21.308792')[0m
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.388990', '2011-05-12 21:52:21.388990')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.485220', '2011-05-12 21:52:21.485220')[0m
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.647630', '2011-05-12 21:52:21.647630')
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (2.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.741620', '2011-05-12 21:52:21.741620')[0m
+Completed 200 OK in 98ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.908738', '2011-05-12 21:52:21.908738')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:21 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:21.982206', '2011-05-12 21:52:21.982206')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.131907', '2011-05-12 21:52:22.131907')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.228639', '2011-05-12 21:52:22.228639')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.378882', '2011-05-12 21:52:22.378882')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.500683', '2011-05-12 21:52:22.500683')[0m
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.594982', '2011-05-12 21:52:22.594982')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.734413', '2011-05-12 21:52:22.734413')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (4.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:22.841208', '2011-05-12 21:52:22.841208')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:22 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.008194', '2011-05-12 21:52:23.008194')[0m
+Completed 200 OK in 52ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.113225', '2011-05-12 21:52:23.113225')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.227296', '2011-05-12 21:52:23.227296')[0m
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.384024', '2011-05-12 21:52:23.384024')
+Completed 200 OK in 49ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.507367', '2011-05-12 21:52:23.507367')[0m
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.720467', '2011-05-12 21:52:23.720467')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.829545', '2011-05-12 21:52:23.829545')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:23 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:23.943666', '2011-05-12 21:52:23.943666')
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.044634', '2011-05-12 21:52:24.044634')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.212513', '2011-05-12 21:52:24.212513')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.316890', '2011-05-12 21:52:24.316890')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.458204', '2011-05-12 21:52:24.458204')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.530294', '2011-05-12 21:52:24.530294')[0m
+Completed 200 OK in 58ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.678495', '2011-05-12 21:52:24.678495')
+Completed 200 OK in 116ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.851269', '2011-05-12 21:52:24.851269')[0m
+Completed 200 OK in 53ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:24 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:24.974130', '2011-05-12 21:52:24.974130')
+Completed 200 OK in 60ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.146288', '2011-05-12 21:52:25.146288')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.227731', '2011-05-12 21:52:25.227731')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.374658', '2011-05-12 21:52:25.374658')[0m
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.473884', '2011-05-12 21:52:25.473884')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.578335', '2011-05-12 21:52:25.578335')[0m
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.761719', '2011-05-12 21:52:25.761719')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.837056', '2011-05-12 21:52:25.837056')[0m
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:25 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:25.966119', '2011-05-12 21:52:25.966119')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.076836', '2011-05-12 21:52:26.076836')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.220568', '2011-05-12 21:52:26.220568')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.333368', '2011-05-12 21:52:26.333368')[0m
+Completed 200 OK in 29ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.435373', '2011-05-12 21:52:26.435373')
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.593524', '2011-05-12 21:52:26.593524')[0m
+Completed 200 OK in 109ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.712810', '2011-05-12 21:52:26.712810')
+Completed 200 OK in 67ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.856939', '2011-05-12 21:52:26.856939')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:26.961040', '2011-05-12 21:52:26.961040')
+Completed 200 OK in 30ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:26 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.072962', '2011-05-12 21:52:27.072962')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (4.9ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.182265', '2011-05-12 21:52:27.182265')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.348137', '2011-05-12 21:52:27.348137')[0m
+Completed 200 OK in 92ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.448564', '2011-05-12 21:52:27.448564')
+Completed 200 OK in 49ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.612553', '2011-05-12 21:52:27.612553')[0m
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.728189', '2011-05-12 21:52:27.728189')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:27 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.7ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:27.888860', '2011-05-12 21:52:27.888860')[0m
+Completed 200 OK in 98ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.049678', '2011-05-12 21:52:28.049678')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.171337', '2011-05-12 21:52:28.171337')[0m
+Completed 200 OK in 56ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.353256', '2011-05-12 21:52:28.353256')
+Completed 200 OK in 62ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.478170', '2011-05-12 21:52:28.478170')[0m
+Completed 200 OK in 61ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.664060', '2011-05-12 21:52:28.664060')
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.800453', '2011-05-12 21:52:28.800453')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:28 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:28.934084', '2011-05-12 21:52:28.934084')
+Completed 200 OK in 120ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.128658', '2011-05-12 21:52:29.128658')[0m
+Completed 200 OK in 48ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.207515', '2011-05-12 21:52:29.207515')
+Completed 200 OK in 99ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.377271', '2011-05-12 21:52:29.377271')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.498120', '2011-05-12 21:52:29.498120')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.638895', '2011-05-12 21:52:29.638895')[0m
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.752580', '2011-05-12 21:52:29.752580')
+Completed 200 OK in 62ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.885278', '2011-05-12 21:52:29.885278')[0m
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:29 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:29.993337', '2011-05-12 21:52:29.993337')
+Completed 200 OK in 50ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.097637', '2011-05-12 21:52:30.097637')[0m
+Completed 200 OK in 93ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.282189', '2011-05-12 21:52:30.282189')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.418977', '2011-05-12 21:52:30.418977')[0m
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.592956', '2011-05-12 21:52:30.592956')
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.720098', '2011-05-12 21:52:30.720098')[0m
+Completed 200 OK in 49ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:30 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:30.956833', '2011-05-12 21:52:30.956833')
+Completed 200 OK in 163ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.072651', '2011-05-12 21:52:31.072651')[0m
+Completed 200 OK in 24ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.199273', '2011-05-12 21:52:31.199273')
+Completed 200 OK in 106ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.360340', '2011-05-12 21:52:31.360340')[0m
+Completed 200 OK in 62ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.502379', '2011-05-12 21:52:31.502379')
+Completed 200 OK in 99ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.671779', '2011-05-12 21:52:31.671779')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.790810', '2011-05-12 21:52:31.790810')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:31.934614', '2011-05-12 21:52:31.934614')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:31 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.005459', '2011-05-12 21:52:32.005459')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.144449', '2011-05-12 21:52:32.144449')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.250104', '2011-05-12 21:52:32.250104')
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.405697', '2011-05-12 21:52:32.405697')[0m
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.605847', '2011-05-12 21:52:32.605847')
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.671767', '2011-05-12 21:52:32.671767')[0m
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.841934', '2011-05-12 21:52:32.841934')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:32 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:32.974485', '2011-05-12 21:52:32.974485')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.122836', '2011-05-12 21:52:33.122836')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.233013', '2011-05-12 21:52:33.233013')[0m
+Completed 200 OK in 51ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.308099', '2011-05-12 21:52:33.308099')
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.453645', '2011-05-12 21:52:33.453645')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.563008', '2011-05-12 21:52:33.563008')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.703508', '2011-05-12 21:52:33.703508')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.813008', '2011-05-12 21:52:33.813008')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:33 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:33.986888', '2011-05-12 21:52:33.986888')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.093150', '2011-05-12 21:52:34.093150')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.234957', '2011-05-12 21:52:34.234957')[0m
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.341151', '2011-05-12 21:52:34.341151')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.450376', '2011-05-12 21:52:34.450376')[0m
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.596059', '2011-05-12 21:52:34.596059')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (4.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.733376', '2011-05-12 21:52:34.733376')[0m
+Completed 200 OK in 64ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:34 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:34.945619', '2011-05-12 21:52:34.945619')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.047967', '2011-05-12 21:52:35.047967')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.193324', '2011-05-12 21:52:35.193324')
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.271033', '2011-05-12 21:52:35.271033')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.412640', '2011-05-12 21:52:35.412640')
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.513721', '2011-05-12 21:52:35.513721')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.622390', '2011-05-12 21:52:35.622390')
+Completed 200 OK in 124ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.823132', '2011-05-12 21:52:35.823132')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:35.891400', '2011-05-12 21:52:35.891400')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:35 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.032159', '2011-05-12 21:52:36.032159')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.136308', '2011-05-12 21:52:36.136308')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.317054', '2011-05-12 21:52:36.317054')[0m
+Completed 200 OK in 111ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.424721', '2011-05-12 21:52:36.424721')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.487205', '2011-05-12 21:52:36.487205')[0m
+Completed 200 OK in 127ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.677175', '2011-05-12 21:52:36.677175')
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.779745', '2011-05-12 21:52:36.779745')[0m
+Completed 200 OK in 72ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:36.916792', '2011-05-12 21:52:36.916792')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:36 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.027407', '2011-05-12 21:52:37.027407')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.133206', '2011-05-12 21:52:37.133206')
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.243551', '2011-05-12 21:52:37.243551')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.384110', '2011-05-12 21:52:37.384110')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.500759', '2011-05-12 21:52:37.500759')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.6ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.618843', '2011-05-12 21:52:37.618843')
+Completed 200 OK in 100ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.743182', '2011-05-12 21:52:37.743182')[0m
+Completed 200 OK in 61ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:37.865331', '2011-05-12 21:52:37.865331')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:37 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.025285', '2011-05-12 21:52:38.025285')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.134380', '2011-05-12 21:52:38.134380')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.277839', '2011-05-12 21:52:38.277839')[0m
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.359244', '2011-05-12 21:52:38.359244')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.478651', '2011-05-12 21:52:38.478651')[0m
+Completed 200 OK in 105ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.704736', '2011-05-12 21:52:38.704736')
+Completed 200 OK in 93ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.823411', '2011-05-12 21:52:38.823411')[0m
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:38 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:38.988591', '2011-05-12 21:52:38.988591')
+Completed 200 OK in 61ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.065880', '2011-05-12 21:52:39.065880')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.206744', '2011-05-12 21:52:39.206744')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.339183', '2011-05-12 21:52:39.339183')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.480287', '2011-05-12 21:52:39.480287')
+Completed 200 OK in 70ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.584300', '2011-05-12 21:52:39.584300')[0m
+Completed 200 OK in 32ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.654168', '2011-05-12 21:52:39.654168')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.798292', '2011-05-12 21:52:39.798292')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:39.921335', '2011-05-12 21:52:39.921335')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:39 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.060590', '2011-05-12 21:52:40.060590')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.174547', '2011-05-12 21:52:40.174547')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.284945', '2011-05-12 21:52:40.284945')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.390223', '2011-05-12 21:52:40.390223')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.507744', '2011-05-12 21:52:40.507744')[0m
+Completed 200 OK in 134ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.696197', '2011-05-12 21:52:40.696197')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:40 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:40.941615', '2011-05-12 21:52:40.941615')[0m
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (4.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.051780', '2011-05-12 21:52:41.051780')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.157787', '2011-05-12 21:52:41.157787')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.311148', '2011-05-12 21:52:41.311148')
+Completed 200 OK in 48ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.436152', '2011-05-12 21:52:41.436152')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.588793', '2011-05-12 21:52:41.588793')
+Completed 200 OK in 98ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.703511', '2011-05-12 21:52:41.703511')[0m
+Completed 200 OK in 65ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.804763', '2011-05-12 21:52:41.804763')
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:41 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:41.950689', '2011-05-12 21:52:41.950689')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.066106', '2011-05-12 21:52:42.066106')
+Completed 200 OK in 62ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (5.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.218251', '2011-05-12 21:52:42.218251')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.311244', '2011-05-12 21:52:42.311244')
+Completed 200 OK in 51ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.441014', '2011-05-12 21:52:42.441014')[0m
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.679489', '2011-05-12 21:52:42.679489')
+Completed 200 OK in 149ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.779955', '2011-05-12 21:52:42.779955')[0m
+Completed 200 OK in 87ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:42.943937', '2011-05-12 21:52:42.943937')
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:42 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (6.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.012818', '2011-05-12 21:52:43.012818')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.160705', '2011-05-12 21:52:43.160705')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.260154', '2011-05-12 21:52:43.260154')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.400118', '2011-05-12 21:52:43.400118')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.540102', '2011-05-12 21:52:43.540102')[0m
+Completed 200 OK in 68ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.647092', '2011-05-12 21:52:43.647092')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.758984', '2011-05-12 21:52:43.758984')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:43.864006', '2011-05-12 21:52:43.864006')
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:43 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.008408', '2011-05-12 21:52:44.008408')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.120247', '2011-05-12 21:52:44.120247')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.238710', '2011-05-12 21:52:44.238710')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.341968', '2011-05-12 21:52:44.341968')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.484559', '2011-05-12 21:52:44.484559')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.610497', '2011-05-12 21:52:44.610497')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.769259', '2011-05-12 21:52:44.769259')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.842892', '2011-05-12 21:52:44.842892')
+Completed 200 OK in 48ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:44 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:44.961818', '2011-05-12 21:52:44.961818')[0m
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.104140', '2011-05-12 21:52:45.104140')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.205572', '2011-05-12 21:52:45.205572')[0m
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.353860', '2011-05-12 21:52:45.353860')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.422463', '2011-05-12 21:52:45.422463')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.565855', '2011-05-12 21:52:45.565855')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.672147', '2011-05-12 21:52:45.672147')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.771441', '2011-05-12 21:52:45.771441')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:45.933023', '2011-05-12 21:52:45.933023')[0m
+Completed 200 OK in 56ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:45 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.007049', '2011-05-12 21:52:46.007049')
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.146084', '2011-05-12 21:52:46.146084')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.245602', '2011-05-12 21:52:46.245602')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.384719', '2011-05-12 21:52:46.384719')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.501507', '2011-05-12 21:52:46.501507')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.617682', '2011-05-12 21:52:46.617682')[0m
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.725519', '2011-05-12 21:52:46.725519')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.836812', '2011-05-12 21:52:46.836812')[0m
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:46 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:46.977354', '2011-05-12 21:52:46.977354')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.084023', '2011-05-12 21:52:47.084023')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.236848', '2011-05-12 21:52:47.236848')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.342716', '2011-05-12 21:52:47.342716')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.488057', '2011-05-12 21:52:47.488057')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.599335', '2011-05-12 21:52:47.599335')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.699742', '2011-05-12 21:52:47.699742')
+Completed 200 OK in 99ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.832925', '2011-05-12 21:52:47.832925')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:47 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:47.941254', '2011-05-12 21:52:47.941254')
+Completed 200 OK in 121ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.143113', '2011-05-12 21:52:48.143113')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.243751', '2011-05-12 21:52:48.243751')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.401898', '2011-05-12 21:52:48.401898')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.469051', '2011-05-12 21:52:48.469051')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.649864', '2011-05-12 21:52:48.649864')[0m
+Completed 200 OK in 85ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.776664', '2011-05-12 21:52:48.776664')
+Completed 200 OK in 60ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:48 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:48.871865', '2011-05-12 21:52:48.871865')[0m
+Completed 200 OK in 106ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.051601', '2011-05-12 21:52:49.051601')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.122316', '2011-05-12 21:52:49.122316')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.265883', '2011-05-12 21:52:49.265883')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.372511', '2011-05-12 21:52:49.372511')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.516862', '2011-05-12 21:52:49.516862')
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.620494', '2011-05-12 21:52:49.620494')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.686317', '2011-05-12 21:52:49.686317')
+Completed 200 OK in 75ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.836701', '2011-05-12 21:52:49.836701')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:49 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (5.5ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:49.942184', '2011-05-12 21:52:49.942184')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.086240', '2011-05-12 21:52:50.086240')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.196379', '2011-05-12 21:52:50.196379')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.307584', '2011-05-12 21:52:50.307584')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.421763', '2011-05-12 21:52:50.421763')
+Completed 200 OK in 60ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.609655', '2011-05-12 21:52:50.609655')[0m
+Completed 200 OK in 160ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.762416', '2011-05-12 21:52:50.762416')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.867949', '2011-05-12 21:52:50.867949')[0m
+Completed 200 OK in 86ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:50 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:50.983286', '2011-05-12 21:52:50.983286')
+Completed 200 OK in 67ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.110278', '2011-05-12 21:52:51.110278')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.254160', '2011-05-12 21:52:51.254160')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (3.6ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.363001', '2011-05-12 21:52:51.363001')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.508493', '2011-05-12 21:52:51.508493')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.580096', '2011-05-12 21:52:51.580096')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.690784', '2011-05-12 21:52:51.690784')
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.829996', '2011-05-12 21:52:51.829996')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:51 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.1ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:51.941264', '2011-05-12 21:52:51.941264')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (8.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.089411', '2011-05-12 21:52:52.089411')[0m
+Completed 200 OK in 50ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.170602', '2011-05-12 21:52:52.170602')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.318688', '2011-05-12 21:52:52.318688')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.420202', '2011-05-12 21:52:52.420202')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.600419', '2011-05-12 21:52:52.600419')[0m
+Completed 200 OK in 122ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.740440', '2011-05-12 21:52:52.740440')
+Completed 200 OK in 64ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:52.844472', '2011-05-12 21:52:52.844472')[0m
+Completed 200 OK in 131ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:52 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.024531', '2011-05-12 21:52:53.024531')
+Completed 200 OK in 63ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.157732', '2011-05-12 21:52:53.157732')[0m
+Completed 200 OK in 33ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.299259', '2011-05-12 21:52:53.299259')
+Completed 200 OK in 38ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.396985', '2011-05-12 21:52:53.396985')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.547234', '2011-05-12 21:52:53.547234')
+Completed 200 OK in 128ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.699552', '2011-05-12 21:52:53.699552')[0m
+Completed 200 OK in 59ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.856605', '2011-05-12 21:52:53.856605')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:53 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:53.967239', '2011-05-12 21:52:53.967239')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (4.8ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.078683', '2011-05-12 21:52:54.078683')
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.190103', '2011-05-12 21:52:54.190103')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.286207', '2011-05-12 21:52:54.286207')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.436046', '2011-05-12 21:52:54.436046')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.549521', '2011-05-12 21:52:54.549521')
+Completed 200 OK in 106ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.786372', '2011-05-12 21:52:54.786372')[0m
+Completed 200 OK in 119ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.866631', '2011-05-12 21:52:54.866631')
+Completed 200 OK in 49ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:54 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:54.966201', '2011-05-12 21:52:54.966201')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.130213', '2011-05-12 21:52:55.130213')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.280541', '2011-05-12 21:52:55.280541')[0m
+Completed 200 OK in 121ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.422242', '2011-05-12 21:52:55.422242')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (4.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.492844', '2011-05-12 21:52:55.492844')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.633862', '2011-05-12 21:52:55.633862')
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.742698', '2011-05-12 21:52:55.742698')[0m
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.891204', '2011-05-12 21:52:55.891204')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:55 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:55.998889', '2011-05-12 21:52:55.998889')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (5.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.066667', '2011-05-12 21:52:56.066667')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.207292', '2011-05-12 21:52:56.207292')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.332197', '2011-05-12 21:52:56.332197')
+Completed 200 OK in 66ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.485229', '2011-05-12 21:52:56.485229')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.634437', '2011-05-12 21:52:56.634437')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.781103', '2011-05-12 21:52:56.781103')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:56.900972', '2011-05-12 21:52:56.900972')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:56 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.005758', '2011-05-12 21:52:57.005758')[0m
+Completed 200 OK in 101ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.169611', '2011-05-12 21:52:57.169611')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.6ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.284235', '2011-05-12 21:52:57.284235')[0m
+Completed 200 OK in 103ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.435375', '2011-05-12 21:52:57.435375')
+Completed 200 OK in 63ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.556783', '2011-05-12 21:52:57.556783')[0m
+Completed 200 OK in 64ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.709175', '2011-05-12 21:52:57.709175')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.808592', '2011-05-12 21:52:57.808592')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:57.962357', '2011-05-12 21:52:57.962357')
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:57 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.038035', '2011-05-12 21:52:58.038035')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (8.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.141321', '2011-05-12 21:52:58.141321')
+Completed 200 OK in 100ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.309718', '2011-05-12 21:52:58.309718')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.420236', '2011-05-12 21:52:58.420236')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.604493', '2011-05-12 21:52:58.604493')[0m
+Completed 200 OK in 49ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.681647', '2011-05-12 21:52:58.681647')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.844605', '2011-05-12 21:52:58.844605')[0m
+Completed 200 OK in 98ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:58 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:58.947245', '2011-05-12 21:52:58.947245')
+Completed 200 OK in 50ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:59.051915', '2011-05-12 21:52:59.051915')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:59.214561', '2011-05-12 21:52:59.214561')
+Completed 200 OK in 51ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:59.390895', '2011-05-12 21:52:59.390895')[0m
+Completed 200 OK in 185ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:59.598474', '2011-05-12 21:52:59.598474')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:52:59.817443', '2011-05-12 21:52:59.817443')[0m
+Completed 200 OK in 102ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:52:59 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.053714', '2011-05-12 21:53:00.053714')
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.187338', '2011-05-12 21:53:00.187338')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.346439', '2011-05-12 21:53:00.346439')
+Completed 200 OK in 104ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.445220', '2011-05-12 21:53:00.445220')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.641862', '2011-05-12 21:53:00.641862')
+Completed 200 OK in 74ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.790454', '2011-05-12 21:53:00.790454')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:00.893906', '2011-05-12 21:53:00.893906')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:00 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.050639', '2011-05-12 21:53:01.050639')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (2.9ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.153571', '2011-05-12 21:53:01.153571')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.305492', '2011-05-12 21:53:01.305492')[0m
+Completed 200 OK in 92ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.415410', '2011-05-12 21:53:01.415410')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.520279', '2011-05-12 21:53:01.520279')[0m
+Completed 200 OK in 132ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.683984', '2011-05-12 21:53:01.683984')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.781356', '2011-05-12 21:53:01.781356')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:01.929221', '2011-05-12 21:53:01.929221')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:01 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.033585', '2011-05-12 21:53:02.033585')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.194730', '2011-05-12 21:53:02.194730')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.282791', '2011-05-12 21:53:02.282791')[0m
+Completed 200 OK in 59ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.444293', '2011-05-12 21:53:02.444293')
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.603715', '2011-05-12 21:53:02.603715')[0m
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.730078', '2011-05-12 21:53:02.730078')
+Completed 200 OK in 87ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.881831', '2011-05-12 21:53:02.881831')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:02 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:02.976084', '2011-05-12 21:53:02.976084')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.132696', '2011-05-12 21:53:03.132696')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.240179', '2011-05-12 21:53:03.240179')
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (2.7ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.385100', '2011-05-12 21:53:03.385100')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.493428', '2011-05-12 21:53:03.493428')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.599713', '2011-05-12 21:53:03.599713')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.726725', '2011-05-12 21:53:03.726725')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.835635', '2011-05-12 21:53:03.835635')[0m
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:03 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:03.992941', '2011-05-12 21:53:03.992941')
+Completed 200 OK in 35ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.115992', '2011-05-12 21:53:04.115992')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.220786', '2011-05-12 21:53:04.220786')
+Completed 200 OK in 50ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.336753', '2011-05-12 21:53:04.336753')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.487613', '2011-05-12 21:53:04.487613')
+Completed 200 OK in 85ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.635199', '2011-05-12 21:53:04.635199')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.760164', '2011-05-12 21:53:04.760164')
+Completed 200 OK in 133ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:04 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:04.938404', '2011-05-12 21:53:04.938404')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.231184', '2011-05-12 21:53:05.231184')
+Completed 200 OK in 25ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.384529', '2011-05-12 21:53:05.384529')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.494918', '2011-05-12 21:53:05.494918')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.693732', '2011-05-12 21:53:05.693732')[0m
+Completed 200 OK in 126ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.764681', '2011-05-12 21:53:05.764681')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:05.897366', '2011-05-12 21:53:05.897366')[0m
+Completed 200 OK in 73ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:05 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.021008', '2011-05-12 21:53:06.021008')
+Completed 200 OK in 32ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.123647', '2011-05-12 21:53:06.123647')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.276918', '2011-05-12 21:53:06.276918')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.340664', '2011-05-12 21:53:06.340664')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.494455', '2011-05-12 21:53:06.494455')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.603218', '2011-05-12 21:53:06.603218')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.773993', '2011-05-12 21:53:06.773993')
+Completed 200 OK in 114ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.893907', '2011-05-12 21:53:06.893907')[0m
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:06 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:06.958138', '2011-05-12 21:53:06.958138')
+Completed 200 OK in 77ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.107210', '2011-05-12 21:53:07.107210')[0m
+Completed 200 OK in 47ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.5ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.208926', '2011-05-12 21:53:07.208926')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.360294', '2011-05-12 21:53:07.360294')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.468370', '2011-05-12 21:53:07.468370')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.580434', '2011-05-12 21:53:07.580434')[0m
+Completed 200 OK in 87ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.684038', '2011-05-12 21:53:07.684038')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.853659', '2011-05-12 21:53:07.853659')[0m
+Completed 200 OK in 76ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:07 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:07.962898', '2011-05-12 21:53:07.962898')
+Completed 200 OK in 36ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.067696', '2011-05-12 21:53:08.067696')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.176945', '2011-05-12 21:53:08.176945')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.283388', '2011-05-12 21:53:08.283388')[0m
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.477337', '2011-05-12 21:53:08.477337')
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.592913', '2011-05-12 21:53:08.592913')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.808598', '2011-05-12 21:53:08.808598')
+Completed 200 OK in 125ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.881970', '2011-05-12 21:53:08.881970')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:08 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:08.986974', '2011-05-12 21:53:08.986974')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.128646', '2011-05-12 21:53:09.128646')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.244560', '2011-05-12 21:53:09.244560')
+Completed 200 OK in 87ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.396121', '2011-05-12 21:53:09.396121')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.467204', '2011-05-12 21:53:09.467204')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.607427', '2011-05-12 21:53:09.607427')[0m
+Completed 200 OK in 78ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.716536', '2011-05-12 21:53:09.716536')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.858097', '2011-05-12 21:53:09.858097')[0m
+Completed 200 OK in 90ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:09.972212', '2011-05-12 21:53:09.972212')
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:09 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (8.7ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.060003', '2011-05-12 21:53:10.060003')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.203874', '2011-05-12 21:53:10.203874')
+Completed 200 OK in 44ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.310011', '2011-05-12 21:53:10.310011')[0m
+Completed 200 OK in 40ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.456269', '2011-05-12 21:53:10.456269')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.621926', '2011-05-12 21:53:10.621926')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (4.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.751495', '2011-05-12 21:53:10.751495')
+Completed 200 OK in 79ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.879491', '2011-05-12 21:53:10.879491')[0m
+Completed 200 OK in 61ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:10 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (13.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:10.980143', '2011-05-12 21:53:10.980143')
+Completed 200 OK in 91ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.163968', '2011-05-12 21:53:11.163968')[0m
+Completed 200 OK in 32ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.5ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.276839', '2011-05-12 21:53:11.276839')
+Completed 200 OK in 84ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.405558', '2011-05-12 21:53:11.405558')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.512695', '2011-05-12 21:53:11.512695')
+Completed 200 OK in 37ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.655866', '2011-05-12 21:53:11.655866')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.761755', '2011-05-12 21:53:11.761755')
+Completed 200 OK in 34ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.907612', '2011-05-12 21:53:11.907612')[0m
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:11 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:11.978200', '2011-05-12 21:53:11.978200')
+Completed 200 OK in 51ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.091243', '2011-05-12 21:53:12.091243')[0m
+Completed 200 OK in 83ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.237450', '2011-05-12 21:53:12.237450')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.355778', '2011-05-12 21:53:12.355778')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.576452', '2011-05-12 21:53:12.576452')
+Completed 200 OK in 82ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.666964', '2011-05-12 21:53:12.666964')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.834231', '2011-05-12 21:53:12.834231')
+Completed 200 OK in 101ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:12 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:12.958984', '2011-05-12 21:53:12.958984')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.068159', '2011-05-12 21:53:13.068159')
+Completed 200 OK in 85ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.218333', '2011-05-12 21:53:13.218333')[0m
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.5ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.287347', '2011-05-12 21:53:13.287347')
+Completed 200 OK in 81ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.433502', '2011-05-12 21:53:13.433502')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.595493', '2011-05-12 21:53:13.595493')
+Completed 200 OK in 50ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.762938', '2011-05-12 21:53:13.762938')[0m
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (2.4ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.864941', '2011-05-12 21:53:13.864941')
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:13 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:13.988367', '2011-05-12 21:53:13.988367')[0m
+Completed 200 OK in 89ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.090950', '2011-05-12 21:53:14.090950')
+Completed 200 OK in 42ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.216672', '2011-05-12 21:53:14.216672')[0m
+Completed 200 OK in 112ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.407966', '2011-05-12 21:53:14.407966')
+Completed 200 OK in 43ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.554815', '2011-05-12 21:53:14.554815')[0m
+Completed 200 OK in 71ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.656083', '2011-05-12 21:53:14.656083')
+Completed 200 OK in 41ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.764458', '2011-05-12 21:53:14.764458')[0m
+Completed 200 OK in 46ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:14.907862', '2011-05-12 21:53:14.907862')
+Completed 200 OK in 80ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:14 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.014338', '2011-05-12 21:53:15.014338')[0m
+Completed 200 OK in 45ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.131182', '2011-05-12 21:53:15.131182')
+Completed 200 OK in 88ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.261209', '2011-05-12 21:53:15.261209')[0m
+Completed 200 OK in 48ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (1.3ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.392304', '2011-05-12 21:53:15.392304')
+Completed 200 OK in 102ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.529898', '2011-05-12 21:53:15.529898')[0m
+Completed 200 OK in 39ms
+
+
+Started GET "/users/gen" for 127.0.0.1 at 2011-05-12 17:53:15 -0400
+  Processing by UsersController#gen as HTML
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("name", "gender", "location", "age", "created_at", "updated_at") VALUES ('fulano', NULL, 'london', 18, '2011-05-12 21:53:15.654132', '2011-05-12 21:53:15.654132')
+Completed 200 OK in 63ms
