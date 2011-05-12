@@ -5,7 +5,15 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-mysql2legacydb-adapter'
+#gem 'activerecord-mysql2legacydb-adapter'
+
+gem 'rack-fiber_pool', :require => 'rack/fiber_pool'
+gem 'activerecord', :require => 'active_record'
+gem 'mysqlplus'
+gem 'em-mysqlplus'
+gem 'em-synchrony'
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
